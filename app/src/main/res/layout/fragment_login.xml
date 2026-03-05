@@ -34,7 +34,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/ic_grafico"
-                        app:tint="@color/blue">
+                        app:tint="@color/blue"/>
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
@@ -55,7 +55,7 @@
             android:textColor="@color/blue"
             android:gravity="center"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="32dp">
+            android:layout_marginBottom="32dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_email"

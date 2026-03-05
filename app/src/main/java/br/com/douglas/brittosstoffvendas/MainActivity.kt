@@ -3,15 +3,14 @@ package br.com.douglas.brittosstoffvendas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.navigation.NavHost
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import br.com.douglas.brittosstoffvendas.dataBinding.ActivityMainBinding
+import br.com.douglas.brittosstoffvendas.databinding.ActivityMainBinding
 
-class MainActivity: AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -24,7 +23,7 @@ class MainActivity: AppCompatActivity(){
         binding.bottomNavigation.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.loginFragment){
+            if (destination.id == R.id.loginFragment) {
                 binding.bottomNavigation.visibility = View.GONE
             } else {
                 binding.bottomNavigation.visibility = View.VISIBLE
@@ -32,4 +31,3 @@ class MainActivity: AppCompatActivity(){
         }
     }
 }
-
