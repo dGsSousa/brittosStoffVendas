@@ -63,7 +63,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail"
+            android:textColorHint="@color/blue"
             app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/blue"
+            app:boxStrokeColor="@color/blue"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
@@ -74,7 +77,8 @@
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -83,8 +87,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
+            android:textColorHint="@color/blue"
             app:startIconDrawable="@drawable/ic_cadeado"
+            app:startIconTint="@color/blue"
             app:endIconMode="password_toggle"
+            app:endIconTint="@color/blue"
+            app:boxStrokeColor="@color/blue"
             app:boxCornerRadiusTopStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
@@ -95,7 +103,8 @@
                 android:id="@+id/et_senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textColor="@color/blue" />
         </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout

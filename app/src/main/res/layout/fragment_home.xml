@@ -27,10 +27,11 @@
                 android:id="@+id/tv_saudacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
                 android:text="Ola, Douglas"
+                android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -219,6 +220,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
                 <com.google.android.material.button.MaterialButton
@@ -231,18 +233,25 @@
                     app:backgroundTint="@color/blue"
                     app:cornerRadius="8dp"
                     app:icon="@drawable/ic_sofa"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:gravity="center" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_nova_fabricacao"
                     android:layout_width="0dp"
                     android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="Nova Fabricacao"
+                    android:text="Nova Fabricação"
                     android:textColor="@color/white"
                     app:backgroundTint="@color/red"
                     app:cornerRadius="8dp"
-                    app:icon="@drawable/ic_fabricacao"/>
+                    app:icon="@drawable/ic_fabricacao"
+                    android:layout_marginStart="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <!-- Botao Ver Modelos -->
@@ -251,7 +260,7 @@
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:text="Ver Modelos de Sofas"
+                android:text="Ver Modelos de Sofás"
                 android:textColor="@color/blue"
                 app:strokeColor="@color/blue"
                 app:cornerRadius="8dp"
@@ -265,21 +274,24 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pedidos em Producao"
+                    android:text="Pedidos em Produção"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="@color/blue"/>
 
                 <TextView
                     android:id="@+id/tv_ver_todos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="8dp"
                     android:text="VER TODOS"
                     android:textSize="13sp"
                     android:textStyle="bold"

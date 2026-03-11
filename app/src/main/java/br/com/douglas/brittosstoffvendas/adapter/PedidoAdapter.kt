@@ -4,8 +4,9 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.seunome.salessystempro.databinding.ItemPedidoBinding
-import com.seunome.salessystempro.model.Pedido
+import br.com.douglas.brittosstoffvendas.R
+import br.com.douglas.brittosstoffvendas.databinding.ItemPedidoBinding
+import br.com.douglas.brittosstoffvendas.model.Pedido
 
 // Adapter: transforma uma lista de Pedidos em itens visuais
 class PedidoAdapter(private val pedidos: List<Pedido>) :

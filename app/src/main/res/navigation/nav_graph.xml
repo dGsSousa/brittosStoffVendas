@@ -19,22 +19,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="br.com.douglas.brittosstoffvendas.ui.login.HomeFragment"
+        android:name="br.com.douglas.brittosstoffvendas.ui.home.HomeFragment"
         android:label="Home"/>
 
     <fragment
         android:id="@+id/pedidosFragment"
-        android:name="br.com.douglas.brittosstoffvendas.ui.login.PedidosFragment"
+        android:name="br.com.douglas.brittosstoffvendas.ui.pedidos.PedidosFragment"
         android:label="Pedidos"/>
 
     <fragment
         android:id="@+id/catalogoFragment"
-        android:name="br.com.douglas.brittosstoffvendas.ui.login.CatalogoFragment"
+        android:name="br.com.douglas.brittosstoffvendas.ui.catalogo.CatalogoFragment"
         android:label="Catalogo"/>
 
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="br.com.douglas.brittosstoffvendas.ui.login.PerfilFragment"
+        android:name="br.com.douglas.brittosstoffvendas.ui.perfil.PerfilFragment"
         android:label="Perfil"/>
 
 </navigation>
